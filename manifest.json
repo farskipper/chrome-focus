@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "less-chrome-more-focus",
+  "description": "Are you easily distracted? This chrome extension replaces the Google doodle with their default logo and makes new tabs blank.",
+  "version": "0.0.0",
+
+  "chrome_url_overrides": {
+    "newtab": "empty-tab.html"
+  },
+  "content_scripts": [
+    {
+      "css": ["no-doodle.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
