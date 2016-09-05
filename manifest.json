@@ -11,7 +11,7 @@
   "content_scripts": [
     {
       "css": ["no-doodle.css"],
-      "matches": ["<all_urls>"]
+      "matches": ["https://www.google.com/*"]
     }
   ]
 }
